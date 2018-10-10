@@ -1,0 +1,17 @@
+platform :ios, '10.0'
+
+target 'CarMessage' do
+    pod 'MBProgressHUD'
+    pod 'MJRefresh'
+    pod 'Masonry'
+    pod 'Toast'
+    pod 'HMSegmentedControl'
+    pod 'SDWebImage'
+    pod 'YYKit'
+    pod 'SDCycleScrollView'
+    pod 'UITableView+FDTemplateLayoutCell'
+    pod 'SDAutoLayout'
+    pod 'AMap3DMap'
+    pod 'AMapLocation'
+end
+

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CMEmojiPreView">
+            <rect key="frame" x="0.0" y="0.0" width="60" height="90"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emoticon_preview_background.png" translatesAutoresizingMaskIntoConstraints="NO" id="pJs-ur-ED1">
+                    <rect key="frame" x="0.0" y="0.0" width="60" height="90"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gkU-tm-EJ6">
+                    <rect key="frame" x="10" y="5" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="FkS-YK-Iik"/>
+                        <constraint firstAttribute="height" constant="40" id="mUl-pj-Al7"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="pJs-ur-ED1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="0gP-ly-kWt"/>
+                <constraint firstAttribute="trailing" secondItem="pJs-ur-ED1" secondAttribute="trailing" id="3Ji-Pg-8Vi"/>
+                <constraint firstItem="pJs-ur-ED1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="LlL-po-vXj"/>
+                <constraint firstItem="pJs-ur-ED1" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Pfq-g2-0xc"/>
+                <constraint firstItem="pJs-ur-ED1" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="W2n-Er-SPG"/>
+                <constraint firstItem="gkU-tm-EJ6" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="h9G-Y2-oPR"/>
+                <constraint firstAttribute="bottom" secondItem="pJs-ur-ED1" secondAttribute="bottom" id="he8-Bg-hwB"/>
+                <constraint firstItem="gkU-tm-EJ6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="rLU-Pw-2aP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="emojiView" destination="gkU-tm-EJ6" id="nA2-rh-T2t"/>
+            </connections>
+            <point key="canvasLocation" x="-113" y="320.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="emoticon_preview_background.png" width="76" height="110"/>
+    </resources>
+</document>

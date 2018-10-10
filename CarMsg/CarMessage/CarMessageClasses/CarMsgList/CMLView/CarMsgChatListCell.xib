@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CarMsgChatListCell" rowHeight="100" id="KGk-i7-Jjw" customClass="CarMsgChatListCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="65.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zrI-hc-0fn">
+                        <rect key="frame" x="8" y="8" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="zrI-hc-0fn" secondAttribute="height" multiplier="1:1" id="NrE-OI-rVK"/>
+                            <constraint firstAttribute="width" constant="50" id="iaM-0n-oRq"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="昵称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qvy-A9-ns3">
+                        <rect key="frame" x="66" y="8" width="35" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最后一条消息内容" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xOz-8O-Q99">
+                        <rect key="frame" x="66" y="40" width="122.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上午08:30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLd-Gl-6D5">
+                        <rect key="frame" x="253.5" y="8" width="58.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n5A-Os-pJO">
+                        <rect key="frame" x="43.5" y="3" width="19.5" height="20"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dun-uQ-5fR">
+                                <rect key="frame" x="2" y="2" width="15.5" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="tNG-Vy-LGl"/>
+                            <constraint firstAttribute="width" constant="20" id="zdi-Vw-YTq"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="n5A-Os-pJO" firstAttribute="trailing" secondItem="zrI-hc-0fn" secondAttribute="trailing" constant="5" id="2f7-4X-A5I"/>
+                    <constraint firstAttribute="trailing" secondItem="aLd-Gl-6D5" secondAttribute="trailing" constant="8" id="3NI-hM-wuf"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="qvy-A9-ns3" secondAttribute="trailing" constant="8" id="6Lc-fK-Lyk"/>
+                    <constraint firstItem="qvy-A9-ns3" firstAttribute="top" secondItem="zrI-hc-0fn" secondAttribute="top" id="DHB-gb-MwT"/>
+                    <constraint firstItem="xOz-8O-Q99" firstAttribute="leading" secondItem="qvy-A9-ns3" secondAttribute="leading" id="Lv0-Bp-cya"/>
+                    <constraint firstItem="qvy-A9-ns3" firstAttribute="leading" secondItem="zrI-hc-0fn" secondAttribute="trailing" constant="8" id="RhN-Uw-mE8"/>
+                    <constraint firstItem="aLd-Gl-6D5" firstAttribute="top" secondItem="qvy-A9-ns3" secondAttribute="top" id="aN4-H2-ICc"/>
+                    <constraint firstItem="n5A-Os-pJO" firstAttribute="top" secondItem="zrI-hc-0fn" secondAttribute="top" constant="-5" id="c8W-fR-IUf"/>
+                    <constraint firstItem="xOz-8O-Q99" firstAttribute="bottom" secondItem="zrI-hc-0fn" secondAttribute="bottom" id="eML-lQ-9nr"/>
+                    <constraint firstItem="zrI-hc-0fn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="u3z-A7-Kkx"/>
+                    <constraint firstItem="zrI-hc-0fn" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="yv9-W0-WaV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="content" destination="xOz-8O-Q99" id="1Z1-UO-YkF"/>
+                <outlet property="headImage" destination="zrI-hc-0fn" id="2hN-zY-l6K"/>
+                <outlet property="nickName" destination="qvy-A9-ns3" id="EFW-rm-kHd"/>
+                <outlet property="numberLabel" destination="Dun-uQ-5fR" id="X27-PD-u5f"/>
+                <outlet property="numberView" destination="n5A-Os-pJO" id="q5q-O6-dv0"/>
+                <outlet property="time" destination="aLd-Gl-6D5" id="TLz-oq-eAY"/>
+            </connections>
+            <point key="canvasLocation" x="110" y="34"/>
+        </tableViewCell>
+    </objects>
+</document>
