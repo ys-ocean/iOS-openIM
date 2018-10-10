@@ -5,3 +5,4 @@
 ###
 需要拖入 官方Demo里面的文件夹 WXFrameworks 到本demo中
 
+![image]https://github.com/xhisdai/OpenIM-/blob/master/images/IMG_3236.PNG
